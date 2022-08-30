@@ -1,24 +1,21 @@
 <template>
   <div class="preview-screen">
-    <canvas ref="canvas">
-
-    </canvas>
+    <Canvas class="preview-screen__canvas"/>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { onMounted, reactive, ref } from 'vue';
-import Canvas from './classes/Canvas';
+import Canvas from '../Canvas/Canvas.vue';
 
-const canvas = ref<HTMLCanvasElement>();
-const ctx = reactive(new Canvas());
-
-onMounted(() => {
-  ctx.init(canvas.value!);
-  ctx.draw();
-})
-  
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .preview-screen {
+    width: 100%;
+    height: 100%;
+    &__canvas {
+      width: 100%;
+      height: 100%;
+    }
+  }
 </style>

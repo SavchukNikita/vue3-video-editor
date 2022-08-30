@@ -16,7 +16,8 @@
 </template>
 
 <script setup lang="ts">
-import PreviewScreen from './components/PreviewScreen';
+import PreviewScreen from './components/PreviewScreen/PreviewScreen.vue';
+
 </script>
 
 
@@ -25,31 +26,26 @@ import PreviewScreen from './components/PreviewScreen';
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-areas:  "a b b b b b b c"
-                          "a b b b b b b c"
-                          "a b b b b b b c"
-                          "a b b b b b b c"
-                          "d d d d d d d d"
-                          "d d d d d d d d";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 200px;
 
     &__files {
       background-color: red;
-      grid-area: a;
     }
 
     &__preview {
       background-color: green;
-      grid-area: b;
     }
 
     &__assets {
       background-color: aqua;
-      grid-area: c;
     }
 
     &__timeline {
       background-color: black;
-      grid-area: d;
+      grid-column-start: 1;
+      grid-column-end: 4;
     }
   }
 </style>
