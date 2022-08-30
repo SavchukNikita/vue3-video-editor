@@ -1,6 +1,5 @@
-import getMousePosition from "../../../utils/getMousePosition";
-import { IGraphicElement } from "../interfaces";
-import { Position, Timestamp } from "../types";
+import { Timestamp, Position } from "@/core/types";
+import getMousePosition from "@/utils/getMousePosition";
 
 export default abstract class GraphicElement {
   timestamp: Timestamp = {
@@ -12,10 +11,6 @@ export default abstract class GraphicElement {
     x: Math.floor(Math.random() * 199 + 1),
     y: 10,
   };
-
-  width = 100;
-
-  height = 100;
 
   color = "#FFFFFF";
 

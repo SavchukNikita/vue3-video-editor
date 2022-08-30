@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import Canvas from '../Canvas/Canvas.vue';
+import Canvas from './Canvas.vue';
 
 </script>
 

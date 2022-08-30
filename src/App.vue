@@ -7,7 +7,7 @@
       <PreviewScreen />
     </div>
     <div class="editor__assets">
-      assets
+      <AssetsList />
     </div>
     <div class="editor__timeline">
       timeline
@@ -16,7 +16,8 @@
 </template>
 
 <script setup lang="ts">
-import PreviewScreen from './components/PreviewScreen/PreviewScreen.vue';
+import PreviewScreen from '@/components/PreviewScreen.vue';
+import AssetsList from './components/AssetsList.vue';
 
 </script>
 

@@ -1,7 +1,7 @@
 import RectangeCtx from "./RectangeCtx";
-import GraphicElement from "./GraphicElement";
+import CircleCtx from "./CircleCtx";
 
 export {
-  GraphicElement,
   RectangeCtx,
+  CircleCtx,
 }
